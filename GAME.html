@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Water Gun</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body class="default">
+  <div class="container">
+    <div class="creator">By: Palika Ghai</div>
+    
+    <div class="top-buttons">
+      <button class="skin-btn" id="skinBtn">Skins</button>
+      <button class="theme-btn" id="themeBtn">Theme</button>
+    </div>
+    
+    <div class="theme-dropdown" id="themeDropdown">
+      <div class="theme-option" data-theme="dark">Dark</div>
+      <div class="theme-option" data-theme="grey">Grey</div>
+      <div class="theme-option" data-theme="white">White</div>
+      <div class="theme-option" data-theme="default">Default</div>
+    </div>
+
+    <div class="skin-dropdown" id="skinDropdown">
+      <div class="skin-option" data-skin="nature">
+        <div class="skin-preview" style="background: linear-gradient(to right, #4CAF50, #8BC34A);"></div>
+        Nature
+      </div>
+      <div class="skin-option" data-skin="ocean">
+        <div class="skin-preview" style="background: linear-gradient(to right, #00BCD4, #0097A7);"></div>
+        Ocean
+      </div>
+      <div class="skin-option" data-skin="fire">
+        <div class="skin-preview" style="background: linear-gradient(to right, #FF5722, #F44336);"></div>
+        Fire
+      </div>
+      <div class="skin-option" data-skin="default">
+        <div class="skin-preview" style="background: #4a6bff;"></div>
+        Default
+      </div>
+    </div>
+
+    <h1>Snake Water Gun</h1>
+
+    <div class="choices">
+      <button class="choice-btn" id="snake">🐍 SNAKE</button>
+      <button class="choice-btn" id="water">💧 WATER</button>
+      <button class="choice-btn" id="gun">🔫 GUN</button>
+    </div>
+
+    <div class="emoji-reactions" id="emojiReactions">
+      <button class="emoji-btn" data-emoji="👍">👍</button>
+      <button class="emoji-btn" data-emoji="😂">😂</button>
+      <button class="emoji-btn" data-emoji="😮">😮</button>
+      <button class="emoji-btn" data-emoji="😢">😢</button>
+      <button class="emoji-btn" data-emoji="👏">👏</button>
+    </div>
+
+    <div class="result" id="result">What you choose?</div>
+
+    <div class="scores">
+      <div class="score" id="user-score">Your Score: 0</div>
+      <div class="score" id="computer-score">Computer Score: 0</div>
+    </div>
+
+    <button class="invite-btn" id="inviteBtn">INVITE</button>
+    <div class="invite-dropdown" id="inviteDropdown">
+      <div class="social-icon" id="whatsapp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span>WhatsApp</span>
+      </div>
+      <div class="social-icon" id="twitter">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
+        <span>Twitter</span>
+      </div>
+      <div class="social-icon" id="email">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email">
+        <span>Email</span>
+      </div>
+      <div class="social-icon" id="instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+        <span>Instagram</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sound Effects -->
+  <audio id="winSound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg" preload="auto"></audio>
+  <audio id="loseSound" src="https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg" preload="auto"></audio>
+  <audio id="drawSound" src="https://actions.google.com/sounds/v1/cartoon/clang.ogg" preload="auto"></audio>
+  <audio id="emojiSound" src="https://actions.google.com/sounds/v1/cartoon/cartoon_whistle.ogg" preload="auto"></audio>
+  <script src="game.js"></script>
+</body>
+</html>
